@@ -1,0 +1,45 @@
+apiVersion: apps/v1 
+kind: Deployment
+metadata:
+  name: wxUtils-member-card-server
+  labels:
+    server: wxUtils-member-card
+spec:
+  selector:
+    matchLabels:
+      server: wxUtils-member-card
+  replicas: 1
+  template: 
+    metadata:
+      labels:
+        server: wxUtils-member-card
+    spec:
+      containers:
+      - name: wxUtils-member-card-server
+        image: docker-registry.icarcloud.net:8088/laikoo/server/dockerImagePathAndVersion
+        ports:
+        - containerPort: 6015
+        env:
+        - name: CONFIGSERVERURL
+          value: http://apollo-config-server:8080/
+        
+        
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: wxUtils-member-card-server
+  labels:
+    server: wxUtils-member-card
+spec:
+  selector:
+    server: wxUtils-member-card
+  #type: NodePort
+  # clusterIP: 10.106.100.2
+  ports:
+  - name: http
+    protocol: TCP
+   # nodePort: 31000
+    port: 6015
+    targetPort: 6015

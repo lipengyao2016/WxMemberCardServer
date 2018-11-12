@@ -1,0 +1,29 @@
+test:
+ script:
+  # 服务组件名字
+  - ServerName=WxMemberCardServer
+  # 创建 apidoc coverage 目录结构
+  - /opt/createFile.LaiKoo.sh ${ServerName}
+  - printf "Coverage test report view detail by visiting http://192.168.7.201:8087/LaiKoo/coverage/%s/index.html\n" ${ServerName}
+  - printf "Apidoc view detail by visiting http://192.168.7.201:8087/LaiKoo/apidoc/%s/index.html\n" ${ServerName}
+  # 设置环境变量
+  - export SERVER_DOMAIN="localhost"
+  - export SERVER_PORT=6000
+  - export KNEX_CLIENT="mysql"
+  - export KNEX_CONNECTION_HOST="localhost"
+  - export KNEX_CONNECTION_PORT=3306
+  - export KNEX_CONNECTION_USER="root"
+  - export KNEX_CONNECTION_PASSWORD="123456"
+  - export KNEX_CONNECTION_DATABASE=${ServerName}DB
+  - export KNEX_POOL_MIN=0
+  - export KNEX_POOL_MAX=10
+  # 编译生成apidoc文档
+  - mkdocs build -c
+  - cp -R $(pwd)/site/* /opt/devDocument/LaiKoo/apidoc/${ServerName}
+#  # 初始化数据库
+#  - mysql -h $KNEX_CONNECTION_HOST -u $KNEX_CONNECTION_USER -p$KNEX_CONNECTION_PASSWORD -e "source "$(pwd)"/doc/${ServerName}.sql"
+#  # 运行测试用例
+#  - npm install
+#  - grunt coverage
+#  - cp -R $(pwd)/coverage/lcov-report/* /opt/devDocument/LaiKoo/coverage/${ServerName}
+

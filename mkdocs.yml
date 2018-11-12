@@ -1,0 +1,12 @@
+site_name: '微信会员卡管理组件'
+repo_url: 'http://gitlab.icarcloud.net/iCarCloud/BCS/BCSystem/IntelligentCabinet/ThirdPayServer'
+repo_name: 'GitLab'
+site_author : 'lipy'
+docs_dir : 'apidoc'
+pages:
+  - '主页': 'index.md'
+  - '微信会员卡': 'wxMemberCardApi.md'
+#### theme type: readthedocs bootstrap cerulean cosmo cyborg slate united yeti
+theme: readthedocs
+
+

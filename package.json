@@ -1,0 +1,46 @@
+{
+  "name": "WxMemberCardServer",
+  "version": "1.0.0",
+  "description": "WxMemberCardServer",
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.icarcloud.net:iCarCloud/BCS/LaiKooSystem/BasePlatform/WxMemberCardServer.git"
+  },
+  "main": "server.js",
+  "keywords": [
+    "rest",
+    "router",
+    "koa",
+    "http",
+    "middleware"
+  ],
+  "author": "lipy",
+  "license": "MIT",
+  "dependencies": {
+    "@log4js-node/rabbitmq": "^1.1.0",
+    "amqplib": "^0.5.2",
+    "apoll-config": "^1.0.3",
+    "chai": "^4.1.2",
+    "common-request": "0.0.1",
+    "componet-service-framework": "^1.8.0",
+    "develop-utils": "0.0.6",
+    "eureka-config-client": "^1.1.1",
+    "ioredis": "^3.2.2",
+    "koa": "^2.4.1",
+    "koa-body": "^4.0.4",
+    "koa-bodyparser": "^4.2.1",
+    "koa-json-url-expand": "^1.0.1",
+    "koa-logger": "^3.1.0",
+    "koa-qs": "^2.0.0",
+    "koa-xml-body": "^2.0.0",
+    "log4js": "^3.0.6",
+    "mocha": "^4.1.0",
+    "qs": "^6.5.2",
+    "query-string": "^6.1.0",
+    "rabbit-config-client": "^1.1.5",
+    "request": "^2.83.0",
+    "request-promise": "^4.2.2",
+    "rest-router-model": "^1.7.6",
+    "xml2js": "^0.4.19"
+  }
+}

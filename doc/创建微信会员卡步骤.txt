@@ -1,0 +1,41 @@
+1.通过appid,appSecret获取access_token
+
+{
+    "access_token": "12_g9NflXnh9mVZsmDgzIuBTWHS5Sbv12XUHLf06SFareCVecEzrcfRoQ_DzQ_vB93AxhYzs6DSgNVilHcaYkABDyrZR_IaqOD4Gfqu7Bg5DRp1MsYarBi4CeNlHVmFHf_Y_XtcDhKSpyanDshGMUGeABACKW", 
+    "expires_in": 7200
+}
+
+2.上传LOGO
+
+背景图：
+http://mmbiz.qpic.cn/mmbiz_jpg/ibjHZbcno9WoniaklCBAqC2Rgl5zvVm2kUEfAvbzYbodib7dsE3YVCEmFXKBnqMQPsBq8clSX4icHAibydRauickSXZg/0
+
+logo:
+http://mmbiz.qpic.cn/mmbiz_jpg/ibjHZbcno9WoniaklCBAqC2Rgl5zvVm2kUoRvbiaaQbF7d5sb2EiaJoajX6Ricy0sOEzPdpbPl7cAzJ935y5N0SMFrA/0
+
+封面图片:
+http://mmbiz.qpic.cn/mmbiz_jpg/ibjHZbcno9WoniaklCBAqC2Rgl5zvVm2kUudHdhY2ObzYVAZeBdtN1ug4EoMTCr9l51o9yiaspLac8wrspewzl2hA/0
+
+图文列表：
+http://mmbiz.qpic.cn/mmbiz_jpg/ibjHZbcno9WoniaklCBAqC2Rgl5zvVm2kUoU2RX9tyKDgCPKoLASIVh6cItXuiay7ia1IQUCyQYzQm6V8LSj0AWVHg/0
+http://mmbiz.qpic.cn/mmbiz_jpg/ibjHZbcno9WoniaklCBAqC2Rgl5zvVm2kUjar2TiaJpsGPibFkkp4IcIP2HKtlxhvGhH5G07E0vugMiaiaAwZqDad2eQ/0
+
+3.生成会员卡
+cardid:  pyfP35hHkoQp_7MCPdRMg18dT7iw  海底劳
+
+川菜馆
+{
+    "errcode": 0, 
+    "errmsg": "ok", 
+    "card_id": "pyfP35sVJK9vke0b2eiU-_j2MLOw"
+}
+
+4.获取二维码
+{
+    "errcode": 0, 
+    "errmsg": "ok", 
+    "ticket": "gQEy7zwAAAAAAAAAAS5odHRwOi8vd2VpeGluLnFxLmNvbS9xLzAyd3Z3T1lfOVBmVEMxcTZzdk50NHIAAgQGaX5bAwSAM_EB", 
+    "expire_seconds": 31536000, 
+    "url": "http://weixin.qq.com/q/02wvwOY_9PfTC1q6svNt4r", 
+    "show_qrcode_url": "https://mp.weixin.qq.com/cgi-bin/showqrcode?ticket=gQEy7zwAAAAAAAAAAS5odHRwOi8vd2VpeGluLnFxLmNvbS9xLzAyd3Z3T1lfOVBmVEMxcTZzdk50NHIAAgQGaX5bAwSAM_EB"
+}
